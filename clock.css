@@ -1,0 +1,162 @@
+:root {
+	--fill: #0984e3;
+	--fill1b: var(--fill);
+	--fill1c: var(--fill);
+	--fill2a: var(--fill);
+	--fill2b: var(--fill);
+	--fill2d: var(--fill);
+	--fill2e: var(--fill);
+	--fill2g: var(--fill);
+	--fill3a: var(--fill);
+	--fill3b: var(--fill);
+	--fill3c: var(--fill);
+	--fill3d: var(--fill);
+	--fill3g: var(--fill);
+	--fill4b: var(--fill);
+	--fill4c: var(--fill);
+	--fill4f: var(--fill);
+	--fill4g: var(--fill);
+	--fill5a: var(--fill);
+	--fill5c: var(--fill);
+	--fill5d: var(--fill);
+	--fill5f: var(--fill);
+	--fill5g: var(--fill);
+	--fill6a: var(--fill);
+	--fill6c: var(--fill);
+	--fill6d: var(--fill);
+	--fill6e: var(--fill);
+	--fill6f: var(--fill);
+	--fill6g: var(--fill);
+	--fill7a: var(--fill);
+	--fill7b: var(--fill);
+	--fill7c: var(--fill);
+	--fill8a: var(--fill);
+	--fill8b: var(--fill);
+	--fill8c: var(--fill);
+	--fill8d: var(--fill);
+	--fill8e: var(--fill);
+	--fill8f: var(--fill);
+	--fill8g: var(--fill);
+	--fill9a: var(--fill);
+	--fill9b: var(--fill);
+	--fill9c: var(--fill);
+	--fill9d: var(--fill);
+	--fill9f: var(--fill);
+	--fill9g: var(--fill);
+	--fill0a: var(--fill);
+	--fill0b: var(--fill);
+	--fill0c: var(--fill);
+	--fill0d: var(--fill);
+	--fill0e: var(--fill);
+	--fill0f: var(--fill);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: #232525; */
+	background-color: #111111;
+}
+.digital-watch .hour,
+.digital-watch .minute,
+.digital-watch .second {
+	position: relative;
+	display: inline-block;
+	margin: 30px;
+	font-size: 0;
+}
+.digital-watch .hour::before,
+.digital-watch .hour::after {
+	content: '';
+	position: absolute;
+	right: -40px;
+	width: 20px;
+	height: 20px;
+	background-color: var(--fill);
+}
+.digital-watch .hour::before,
+.digital-watch .minute::before {
+	top: 80px;
+}
+.digital-watch .hour::after,
+.digital-watch .minute::after {
+	top: 180px;
+}
+.digital-watch svg {
+	display: inline-block;
+	margin: 20px;
+}
+.digital-watch svg .segment {
+	/* fill: rgba(0,0,0,.15); */
+	/* transition: .3s ease-in-out; */
+}
+{fill: var(--fill); }
+
+.digital-watch svg.num-1 .b {fill: var(--fill1b);}
+.digital-watch svg.num-1 .c {fill: var(--fill1c);}
+.digital-watch svg.num-2 .a {fill: var(--fill2a);}
+.digital-watch svg.num-2 .b {fill: var(--fill2b);}
+.digital-watch svg.num-2 .d {fill: var(--fill2d);}
+.digital-watch svg.num-2 .e {fill: var(--fill2e);}
+.digital-watch svg.num-2 .g {fill: var(--fill2g);}
+.digital-watch svg.num-3 .a {fill: var(--fill3a);}
+.digital-watch svg.num-3 .b {fill: var(--fill3b);}
+.digital-watch svg.num-3 .c {fill: var(--fill3c);}
+.digital-watch svg.num-3 .d {fill: var(--fill3d);}
+.digital-watch svg.num-3 .g {fill: var(--fill3g);}
+.digital-watch svg.num-4 .b {fill: var(--fill4b);}
+.digital-watch svg.num-4 .c {fill: var(--fill4c);}
+.digital-watch svg.num-4 .f {fill: var(--fill4f);}
+.digital-watch svg.num-4 .g {fill: var(--fill4g);}
+.digital-watch svg.num-5 .a {fill: var(--fill5a);}
+.digital-watch svg.num-5 .c {fill: var(--fill5c);}
+.digital-watch svg.num-5 .d {fill: var(--fill5d);}
+.digital-watch svg.num-5 .f {fill: var(--fill5f);}
+.digital-watch svg.num-5 .g {fill: var(--fill5g);}
+.digital-watch svg.num-6 .a {fill: var(--fill6a);}
+.digital-watch svg.num-6 .c {fill: var(--fill6c);}
+.digital-watch svg.num-6 .d {fill: var(--fill6d);}
+.digital-watch svg.num-6 .e {fill: var(--fill6e);}
+.digital-watch svg.num-6 .f {fill: var(--fill6f);}
+.digital-watch svg.num-6 .g {fill: var(--fill6g);}
+.digital-watch svg.num-7 .a {fill: var(--fill7a);}
+.digital-watch svg.num-7 .b {fill: var(--fill7b);}
+.digital-watch svg.num-7 .c {fill: var(--fill7c);}
+.digital-watch svg.num-8 .a {fill: var(--fill8a);}
+.digital-watch svg.num-8 .b {fill: var(--fill8b);}
+.digital-watch svg.num-8 .c {fill: var(--fill8c);}
+.digital-watch svg.num-8 .d {fill: var(--fill8d);}
+.digital-watch svg.num-8 .e {fill: var(--fill8e);}
+.digital-watch svg.num-8 .f {fill: var(--fill8f);}
+.digital-watch svg.num-8 .g {fill: var(--fill8g);}
+.digital-watch svg.num-9 .a {fill: var(--fill9a);}
+.digital-watch svg.num-9 .b {fill: var(--fill9b);}
+.digital-watch svg.num-9 .c {fill: var(--fill9c);}
+.digital-watch svg.num-9 .d {fill: var(--fill9d);}
+.digital-watch svg.num-9 .f {fill: var(--fill9f);}
+.digital-watch svg.num-9 .g {fill: var(--fill9g);}
+.digital-watch svg.num-0 .a {fill: var(--fill0a);}
+.digital-watch svg.num-0 .b {fill: var(--fill0b);}
+.digital-watch svg.num-0 .c {fill: var(--fill0c);}
+.digital-watch svg.num-0 .d {fill: var(--fill0d);}
+.digital-watch svg.num-0 .e {fill: var(--fill0e);}
+.digital-watch svg.num-0 .f {fill: var(--fill0f);}
+
+.youtube-link {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.controls {
+    position: fixed;     /* Fixes the element in place relative to the viewport */
+    bottom: 5em;         /* 2em padding from the bottom */
+    right: 5em;          /* 2em padding from the right */
+}
